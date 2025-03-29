@@ -10,6 +10,10 @@
 
 body {
     background-color: #F2F2F2;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
 }
 
 header {
@@ -24,6 +28,8 @@ header {
     justify-content: space-around;
     align-items: center;
     gap: 30px;
+    background-color: #fff;
+    z-index: 40;
 }
 
 .header-logo {
@@ -115,13 +121,27 @@ header {
         color: white;
         border: none;
     }
+height: 54.8px;
+&& ul{
+    display: flex;
+    gap: 25px;
+    && li{
+        display: flex;
+    }
+}
+&& button{
+    width: 117.88px;
+height: 42.8px;
+background-color: rgb(235, 0, 69);
+color: white;
+border: none;
+}
 }
 
 .services-container {
     max-width: 1100px;
     margin: 0 auto;
     height: 390px;
-    padding: 20px;
 }
 
 .services-top {
@@ -232,7 +252,6 @@ header {
     display: flex;
     align-items: center;
     max-width: 1100px;
-    padding: 20px;
     margin: 0 auto;
     gap: 20px;
     border-radius: 10px;
@@ -287,7 +306,7 @@ header {
     background: #a00045;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 990px) {
     .container {
         flex-direction: column;
         text-align: center;
@@ -295,6 +314,107 @@ header {
 
     .image {
         max-width: 100%;
+    }
+}
+.new-container {
+    width: 1110px;
+height: 650.59px;
+margin: 0 auto;
+}
+.car{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 152px;
+    && h2{
+        color: rgb(235, 0, 69);
+font-family: Inter;
+font-size: 23px;
+font-weight: 400;
+line-height: 38.4px;
+letter-spacing: 0.64px;
+text-align: left;
+text-transform: uppercase;
+    }
+    && h1{
+        color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 34.13px;
+font-weight: 400;
+line-height: 57.6px;
+letter-spacing: 0.48px;
+text-align: left;
+text-transform: uppercase;
+    }
+}
+.item-carts{
+    display: flex;
+     width: 100%;
+     height: 434px;
+     justify-content: space-between;
+}
+.carts-item {
+    position: relative;
+    border-radius: 10px;
+    padding: 0px 8px;
+    width: 258px;
+height: 368.94px;
+    text-align: center;
+}
+
+.carts-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;    
+    background-color: #F2F2F2;
+    border: 3px solid black;
+    z-index: 2;
+    box-shadow: -3px 8px 10px black;
+    position: absolute;
+top: 0;
+left: 50%;
+transform: translateX(-50%);
+
+}
+.carts-img{
+    mix-blend-mode: multiply;
+}
+.carts-name {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 8px;
+    box-shadow: 0px 3px 35px 0px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    height: 321px;
+    background-color: #fff;
+    padding-top: 80px;
+    text-align: center;
+    padding: 0px 26px;
+    && h4{
+        margin-top: 93px;
+color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 15.3px;
+font-weight: 400;
+line-height: 25.3px;
+text-align: center;
+text-transform: uppercase;
+    }
+    && p{
+        margin-top: 24px;
+        color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 12.25px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
     }
 }
 
@@ -533,3 +653,246 @@ footer {
         }
     }
 }
+    /* .domik img{
+        width: 20px;
+        height: 20px;
+    } */
+    .domik p{
+        margin-left: 10px;
+        width: 200px;
+    }
+    .section5-container {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        max-width: 1100px;
+        margin: 0 auto;
+        gap: 20px;
+    }
+    
+    .section5-image {
+        flex: 1;
+        max-width: 45%;
+    }
+    
+    .section5-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    
+    .section5-content {
+        flex: 1;
+        margin-top: 20px;
+    }
+    
+    .section5-content h2 {
+        font-size: 14px;
+        color: #d4005a;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    
+    .section5-content h1 {
+        font-size: 28px;
+        margin: 10px 0;
+    }
+    
+    .section5-content p {
+        font-size: 14px;
+        color: #333;
+        line-height: 1.6;
+        margin-bottom: 15px;
+    }
+    
+    .section5-btn {
+        background: #d4005a;
+        color: white;
+        text-decoration: none;
+        padding: 10px 20px;
+        font-size: 14px;
+        border-radius: 5px;
+        display: inline-block;
+    }
+    
+    .section5-btn:hover {
+        background: #a00045;
+    }
+    
+    @media (max-width: 990px) {
+        .section5-container {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .section5-image {
+            max-width: 100%;
+        }
+    }
+    .services-top{
+        padding-top: 20px;
+        width: 100%;
+        height: 122px;
+        border-bottom: 2px solid black;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        && button{
+            
+            border-radius: 7px;
+            border: none;
+            background-color: #EB0045;
+            color: white;
+            padding: 10px 15px;
+        }
+    }
+    .section6{
+        padding-top: 50px;
+        width: 1100px;
+        margin: 0 auto;
+    }
+    .section6-top{
+        padding-top: 20px;
+        width: 100%;
+        height: 122px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        && button{
+            
+            border-radius: 7px;
+            border: none;
+            background-color: #EB0045;
+            color: white;
+            padding: 10px 15px;
+        }
+    }
+    .section6-services-top{
+        width: 700px;
+    }
+    .section6-header {
+        color: rgb(235, 0, 69);
+        font-family: Inter;
+        font-size: 22.75px;
+        font-weight: 400;
+        line-height: 38.4px;
+        letter-spacing: 0.64px;
+        text-align: left;
+        text-transform: uppercase;
+    }
+    
+    .section6-subheader {
+        margin: 10px 0 20px;
+        color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 34.31px;
+font-weight: 400;
+line-height: 57.6px;
+letter-spacing: 0.48px;
+text-align: left;
+text-transform: uppercase;
+    }
+    .section6-carts{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .section6-cart{
+        width: 348px;
+        border-radius: 6px;
+        background-color: #fff;
+height: 309px;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+
+    }
+    .item-section6-cart{
+        padding-top: 20px;
+        margin-left: 22px;
+        width: 100%;
+        height: 80px;
+        && h1{
+            color: rgb(0, 0, 0);
+font-family: Inter;
+font-size: 12.52px;
+font-weight: 400;
+line-height: 22.5px;
+letter-spacing: 0%;
+text-align: left;
+text-transform: uppercase
+        }
+    }
+    .item-section6-cart-bottom{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+        padding-right: 20px;
+        && button{
+            background-color: transparent;
+            width: 100px;
+            height: 30px;
+            border-radius: 7px;
+            border: none;
+            padding: 5px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            && img{
+                opacity: 0;
+            }
+            && p{
+                width: 65%;
+                border-bottom: 2px solid red;
+            }
+        }
+        && div{
+            display: flex;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        && p{
+            color: rgb(0, 0, 0);
+            font-family: Inter;
+            font-size: 9.56px;
+            font-weight: 400;
+            line-height: 15.6px;
+            letter-spacing: 0%;
+            text-align: left;
+        }
+        && h6{
+            color: rgb(235, 0, 69);
+font-family: Inter;
+font-size: 9.19px;
+font-weight: 400;
+line-height: 18px;
+letter-spacing: 0%;
+text-align: left;
+cursor: pointer;
+}
+&& h6:hover{
+            border-bottom: 2px solid red;
+
+        }
+    }
+    .syzyk{
+        width: 2px;
+        height: 18px;
+        background-color: yellow;
+    }
+    .section6-cart:hover{
+        border: 1px solid black;
+
+        .item-section6-cart-bottom{
+            && button{
+                cursor: pointer;
+                && img{
+                    opacity: 1;
+                }
+            }
+        }
+    }
