@@ -767,7 +767,8 @@ footer {
         justify-content: space-between;
         align-items: center;
         && button{
-            
+            margin-top: 30px;
+            width: 140px;
             border-radius: 7px;
             border: none;
             background-color: #EB0045;
@@ -780,7 +781,8 @@ footer {
         }
     }
     .section6-services-top{
-        width: 700px;
+        padding-bottom: 20px;
+        width: 100%;
     }
     .section6-header {
         color: rgb(235, 0, 69);
@@ -811,7 +813,7 @@ text-transform: uppercase;
         justify-content: space-between;
     }
     .section6-cart{
-        width: 348px;
+        width: 340px;
         border-radius: 6px;
         background-color: #fff;
 height: 309px;
@@ -819,7 +821,9 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-direction: column;
-
+    }
+    .section-cart-img{
+    width: 100%;
     }
     .item-section6-cart{
         padding-top: 20px;
@@ -930,6 +934,7 @@ cursor: pointer;
         overflow-y: scroll;
     }
     .services-list{
+        gap: 0px !important;
         width: 1200px;
     }
     .services-list2::-webkit-scrollbar {
@@ -968,8 +973,65 @@ cursor: pointer;
         width: 1200px;
     }
     .domik{
-        width: 250px !important;
+        border-radius: none;
+        width: 300px !important;
         font-size: 13px;
         right: 0px;
     }
+    .section6-top{
+        && button{
+            display: none;
+        }
+        && h1{
+            text-align: center;
+        }
+    }
+    .section66-btn{
+        padding-top: 8px;
+        width: 98%;
+        margin: 0 auto;
+        && button{
+            border-radius: 4px;
+            padding: 10px 10px;
+            width: 97.40%;
+            font-size: medium;
+            border: none;
+            color: white;
+            background: #EB0045;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media (max-width: 560px) {
+  .car{
+    & img{
+        padding-top: 20px;
+        width: 100%;
+    }
+  }
+  .item-carts2{
+    margin-top: 40px;
+  }
+  .domik{
+    border-radius: none;
+    height: 70px;
+    width: 100% !important;
+    font-size: 13px;
+    right: 0px;
+    border-radius: 5px 5px 0px 0px;
+    gap: 20px;
+}
+.domik p {
+    width: 100%;
+}
+.content{
+    text-align: left;
+    padding-left: 10px;
+}
+.section5-content{
+    padding-left: 10px;
+    text-align: left;
+}
+
 }
