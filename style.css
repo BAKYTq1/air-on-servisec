@@ -568,7 +568,7 @@ footer {
                 h3 {
                     background: #FFDD00;
                     padding: 14px 24px;
-                    width: 350px;
+                    max-width: 350px;
                     text-align: start;
                     border-radius: 8px;
                     font-size: 21px;
@@ -835,9 +835,13 @@ footer {
 
     .info-footer{
         width: 600px;
+        overflow: hidden;
         margin-top: 55px;
         margin-left: -445px;
-       
+       && img{
+        margin-left: -100px;
+        text-align: center;
+       }
     }
 }
 
@@ -1418,3 +1422,330 @@ display: none ;
     max-width: 300px !important;
 }
 }
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* max-width: 1848px; */
+    height: 100%;
+    max-height: 546px;
+}
+
+.footer-1 {
+    width: 100%;
+    height: 60px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+
+@media (max-width: 990px) {
+    .footer-1 {
+        height: 50px; 
+        padding: 0 20px;
+        justify-content: space-between; 
+        
+        font-size: 14px; 
+    }
+}
+
+@media (max-width: 550px) {
+    .footer-1 {
+        height: auto; 
+        padding: 15px 10px; 
+        flex-direction: column; 
+        gap: 12px; 
+        
+        & > * {
+            width: 100%;
+            text-align: center;
+            justify-content: center;
+        }
+    }
+}
+.footer-2 {
+    width: 100%;
+    height: 121px;
+    background-color: #191919;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    color: #86898F;
+    position: relative;
+}
+
+.footer-2 div {
+    display: flex;
+    width: 405.22px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.footer-2 div a {
+    font-size: 12px;
+    color: #86898F;
+}
+
+@media (max-width: 990px) {
+    .footer-2 {
+        height: 100px; 
+        font-size: 14px; 
+    }
+    
+    .footer-2 div {
+        width: 90%; 
+        max-width: 350px; 
+    }
+}
+
+/* / */
+.domik {
+    border: 2px solid #fff;
+    background: #EB0045;
+    width: 300px !important;
+    height: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    color: #fff;
+    position: fixed;
+    padding: 20px;
+    border-radius: 12px 12px 0px 0px;
+    right: 20px;
+    bottom: 0;
+    transition: all 0.3s ease-in-out;
+    z-index: 9999999999999999999999;
+}
+
+.domik:hover {
+    background: #fedc00;
+    color: black;
+    cursor: pointer;
+}
+
+.domik:hover p {
+    text-decoration: underline;
+    text-decoration-color: #EB0045;
+
+}
+
+.domik p {
+    margin-left: 10px;
+    width: 200px;
+}
+
+.container-footer {
+    text-align: center;
+    width: 100%;
+    padding: 40px 10px;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+
+    .info-footer {
+        width: 600px;
+        margin-top: 55px;
+        margin-left: -445px;
+    }
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    margin-right: 40px;
+
+    img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        transition: filter 0.3s;
+        filter: grayscale(100%);
+        filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.2));
+        cursor: pointer;
+
+        &:hover {
+            filter: grayscale(0%);
+        }
+
+        @media (min-width: 2000px) {
+            width: 100%;
+            height: 100%;
+        }
+        @media (max-width:1186px) {
+            display: none;
+        }
+    }
+}
+
+.title-line {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-weight: bold;
+    color: #333;
+    line-height: 1;
+}
+
+.title-line.one {
+    color: #e63946;
+}
+
+.subtitle {
+    font-size: clamp(1.2rem, 3vw, 1.8rem);
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.button {
+    display: inline-block;
+    background-color: #e63946;
+    color: white;
+    padding: 15px 30px;
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #c1121f;
+}
+
+
+.phone {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.tagline {
+    font-size: clamp(0.9rem, 2vw, 1.1rem);
+    color: #EB0045;
+    font-style: italic;
+}
+
+.link-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+
+    button {
+        background: #EB0045;
+        width: 117.8px;
+        height: 44px;
+        cursor: pointer;
+        color: #fff;
+        border-radius: 12px;
+        border: none;
+    }
+
+    .social-links {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 990px) {
+    .container-footer {
+        flex-direction: column;
+        padding: 30px 15px;
+        
+        .info-footer {
+            width: 100%;
+            margin: 30px 0 0;
+            padding: 0 20px;
+        }
+    }
+
+    .title {
+        margin-right: 0;
+        margin-bottom: 20px;
+        display: none;
+
+        img {
+            height: 250px;
+        }
+    }
+
+    .link-footer {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 550px) {
+    .container-footer {
+        padding: 20px 10px;
+        
+        .info-footer {
+            margin-top: 20px;
+            .oclock-footer{
+                margin-left: -65px;
+            }
+        }
+    }
+
+    .title {
+        img {
+            height: 200px;
+        }
+    }
+
+    .title-line {
+        font-size: clamp(2rem, 7vw, 3rem);
+    }
+
+    .subtitle {
+        font-size: clamp(1rem, 3vw, 1.4rem);
+        margin-bottom: 20px;
+    }
+
+    .button {
+        padding: 12px 25px;
+        margin-bottom: 20px;
+    }
+
+    .phone {
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+
+    .link-footer {
+        button {
+            width: 100px;
+            height: 38px;
+            font-size: 14px;
+        }
+
+        .social-links {
+            gap: 8px;
+        }
+    }
+}
+
+
+    .domik p {
+        margin-left: 10px;
+        width: 200px;
+    }
